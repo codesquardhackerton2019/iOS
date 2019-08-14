@@ -18,19 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taco" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-ni-Buf">
-                                <rect key="frame" x="67" y="205" width="290" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taco" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-ni-Buf">
+                                <rect key="frame" x="79" y="205" width="256" height="260"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JMT Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoH-4O-9eb">
-                                <rect key="frame" x="127" y="528" width="171" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JMT를 찾아서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoH-4O-9eb">
+                                <rect key="frame" x="120" y="528" width="174.5" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Ljp-NM-Xgx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copyright @mildseven" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vR-r6-hYO">
+                                <rect key="frame" x="126.5" y="822" width="161" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97737170699999998" green="0.3092265213" blue="0.33023570279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cpe-ni-Buf" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="161" id="FGF-0E-4Lu"/>
+                            <constraint firstItem="Cpe-ni-Buf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GVr-wd-c1u"/>
+                            <constraint firstItem="8vR-r6-hYO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="ReK-K3-ut0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8vR-r6-hYO" secondAttribute="bottom" constant="20" id="Vz3-JI-Owi"/>
+                            <constraint firstItem="EoH-4O-9eb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="ZBj-7H-Q1m"/>
+                            <constraint firstItem="EoH-4O-9eb" firstAttribute="centerX" secondItem="Cpe-ni-Buf" secondAttribute="centerX" id="btJ-r3-196"/>
+                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="EoH-4O-9eb" secondAttribute="bottom" constant="295" id="hVq-QA-zYe"/>
+                            <constraint firstItem="8vR-r6-hYO" firstAttribute="centerX" secondItem="EoH-4O-9eb" secondAttribute="centerX" id="haK-ag-QTr"/>
+                            <constraint firstItem="EoH-4O-9eb" firstAttribute="top" secondItem="Cpe-ni-Buf" secondAttribute="bottom" constant="63" id="lLd-Gg-6Jd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
